@@ -54,10 +54,44 @@
 //  rect.paint();
 //  console.log(area)
 
-// const now = new Date();
+// const now = new Date();  //create a new object of date class
 // console.log(now.getFullYear());
 
-// const map = new Map();
+// const map = new Map(); 
 // map.set('name', 'daksh');
 // map.set('age', 20);
 // console.log(map.get('name'));
+
+
+// function random() {
+    
+// }
+
+// let p = new Promise(random);
+
+// function callback() {
+//     console.log("promise succeed");
+// }
+// p.then(callback);
+
+
+//Promisified version of read file function
+const fs = require("fs");
+function readTheFile(sendTheFinalValueHere) {
+    fs.readFile("a.txt", "utf-8", function(err,data){
+        sendTheFinalValueHere(data);
+    })
+}
+
+function readFile(fileName) {
+    //read the file and return its value
+    return new Promise(readTheFile);
+}
+
+const p = readFile();
+
+function callback(contents) {
+    console.log(contents);
+}
+
+p.then(callback);
