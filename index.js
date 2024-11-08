@@ -31,25 +31,33 @@
 // */
 
 
-class Rectangle {
-    constructor(width, height, color) {
-         this.width = width;
-         this.height = height;
-         this.color = color; 
-    }
+// class Rectangle {
+//     constructor(width, height, color) {
+//          this.width = width;
+//          this.height = height;
+//          this.color = color; 
+//     }
     
-    area() {
-        const area = this.width * this.height;
-        return area;
-    }
+//     area() {
+//         const area = this.width * this.height;
+//         return area;
+//     }
     
-    paint() {
-             console.log(`Painting with color ${this.color}`);
-    }
+//     paint() {
+//              console.log(`Painting with color ${this.color}`);
+//     }
     
- }
+//  }
  
- const rect = new Rectangle(2, 4, "blue");
- const area = rect.area();
- rect.paint();
- console.log(area)
+//  const rect = new Rectangle(2, 4, "blue");
+//  const area = rect.area();
+//  rect.paint();
+//  console.log(area)
+
+// const now = new Date();
+// console.log(now.getFullYear());
+
+// const map = new Map();
+// map.set('name', 'daksh');
+// map.set('age', 20);
+// console.log(map.get('name'));
